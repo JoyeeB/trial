@@ -1,0 +1,25 @@
+.breadcrumb {
+	margin-top: 60px;
+	margin-left: 100px;
+	
+}
+/* Add your own styling */
+.breadcrumb li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+	color: darkslategrey;
+}
+/* Add separator */
+.breadcrumb li::after {
+  content: " /";
+  margin-left: 5px;
+}
+
+/* Remove separator from last item */
+.breadcrumb li:last-child::after {
+  content: none;
+}

@@ -1,0 +1,23 @@
+.socials-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.socials-icons a {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.socials-icons img {
+  max-width: 70%;
+  height: auto;
+}
+
+.socials-icons a:first-of-type img {
+  height: 16px;
+  width: 30;
+}

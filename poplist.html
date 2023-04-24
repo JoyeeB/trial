@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Playlist</title>
+	<script src="https://sdk.scdn.co/spotify-player.js"></script>
+</head>
+<body>
+	<h1>Popular Playlist</h1>
+	<div id="player"></div>
+
+	<script>
+		// Replace with your own values
+		const playlistId = '37i9dQZF1E38q3CY5z5Q5A';
+		const accessToken = 'YOUR_ACCESS_TOKEN';
+
+		// Set up the Spotify player
+		window.onSpotifyWebPlaybackSDKReady = () => {
+			const player = new Spotify.Player({
+				name: 'My Playlist',
+				getOAuthToken: cb => { cb(accessToken); }
+			});
+
+			// Connect to the player
+			player.connect().then(success => {
+				if (success) {
+					console.log('The Web Playback SDK successfully connected to Spotify!');
+				}
+			});
+
+			// Play the playlist
+			player.addListener('ready', ({ device_id }) => {
+				console.log('Ready with Device ID', device_id);
+				player._options.id = device_id;
+				player._options.volume = 0.5;
+				player._options.player_name = 'My Playlist';
+				player._options.playback_speed = 1.0;
+				player._options.playback_state = 'PLAY';
+				player._options.repeat_state = 'CONTEXT';
+				player._options.shuffle_state = false;
+				player._options.position_ms = 0;
+				player._options.timestamp = 0;
+				player._options.context_uri = `spotify:playlist:${playlistId}`;
+				player._runCommand('play', [], false);
+			});
+		};
+	</script>
+</body>
+</html>

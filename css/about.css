@@ -1,0 +1,22 @@
+
+.About {
+	align-items: center;
+	margin: 100px;
+}
+
+/* Add some space between elements */
+.About h1 {
+  margin-top: 5px;
+  text-align: center;
+  color: darkgoldenrod;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+.About img {
+  width: 50%;
+  height: auto;
+  margin-top: 10px;  
+}
+

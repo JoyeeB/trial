@@ -1,0 +1,103 @@
+.Genre {
+	margin: 50px 40px 40px 40px;
+	text-decoration: none;
+	
+}
+
+.Genre h1 {
+	text-align: center;
+	color: darkgoldenrod;
+	margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-size: 2em;
+	
+}
+
+.Genre p {
+	color: darkslategrey;
+	text-align: center;
+	font-family: Georgia;
+	font-size: 20px;
+	
+}
+
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.genre-grid .container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	
+}
+
+
+.genre-grid img {
+  max-width: 400px;
+  height: auto;
+  height: 300px;
+  width: 450px;
+  border-radius: 20px 20px 0 0;
+  
+ 
+}
+
+.genre-grid p {
+	background-color: #ddd;
+	width: 90%;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 5px; /* reduce the top margin */
+	color: darkgoldenrod;
+	font-family: Garamond, serif;
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+    border-style: ridge;
+    border-color: darkgoldenrod;
+    border-width: 1px;
+	font-size: 17px;
+}
+
+.genre-grid a:hover img {
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+}
+
+.genre-grid a:hover .overlay {
+	opacity: 1;
+}
+
+.genre-grid .overlay {
+	position: absolute;
+	background-color: rgba(184, 134, 11, 3);
+	transition: opacity 0.3s ease;
+}
+
+.genre-grid h4 a{
+	text-decoration: none;
+	text-align: center;
+	color: darkgoldenrod;
+	margin-bottom: 8px;
+	margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;	
+}
+
+.genre-grid h4 a:hover {
+  text-decoration: none;
+  color: rgba(40, 70, 70, 0.8); /* colour with 80% opacity */
+}
+
+.breadcrumb {
+	margin-top: 118px;
+	margin-left: 150px;
+}

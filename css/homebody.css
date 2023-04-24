@@ -1,0 +1,105 @@
+
+.Recipe {
+	margin: 130px 40px 40px 40px;
+}
+
+.Recipe h1 {
+	text-align: center;
+	color: darkgoldenrod;
+	margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-size: 2em;
+
+}
+
+.Recipe p {
+	color: darkslategrey;
+	text-align: center;
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  
+}
+
+.recipe-grid .container {
+  flex-basis: calc(33.33% - 10px);
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  padding: 20px;
+  
+
+}
+
+.recipe-grid img {
+  max-width: 400px;
+  height: 300px;
+  width: 450px;
+  border-radius: 20px 20px 0 0;
+  
+ 
+}
+
+.recipe-grid p {
+	background-color: #ddd;
+	width: 90%;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 5px; /* reduce the top margin */
+	color: darkgoldenrod;
+	font-family: Garamond, serif;
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+    border-style: ridge;
+    border-color: darkgoldenrod;
+    border-width: 1px;
+	font-size: 17px;
+}
+
+.recipe-grid a:hover img {
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+}
+
+.recipe-grid a:hover .overlay {
+	opacity: 1;
+}
+
+.recipe-grid .overlay {
+	position: absolute;
+	background-color: rgba(184, 134, 11, 3);
+	transition: opacity 0.3s ease;
+}
+
+.recipe-grid h4 a{
+	text-decoration: none;
+	text-align: center;
+	color: darkgoldenrod;
+	margin-bottom: 8px;
+	margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;	
+}
+
+.recipe-grid h4 a:hover {
+  text-decoration: none;
+  color: rgba(40, 70, 70, 0.8); /* darkgolenrod with 80% opacity */
+}
+
+
+
+
+
